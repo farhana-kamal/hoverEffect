@@ -1,0 +1,37 @@
+.hover-img{
+	margin: 15% auto 0;
+    display: flex;
+	position: relative;
+	width: 360px;
+	height: 725px;
+	background: rgba(0,0,0,.1);
+	transform: rotate(-30deg) skew(25deg) scale(.8);
+	transition: 0.5s;
+}
+.hover-img img{
+	position: absolute;
+	width: 100%;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.hover-img:hover img:nth-child(4){
+	transform: translate(160px,-160px);
+	opacity: 1;
+}
+.hover-img:hover img:nth-child(3){
+	transform: translate(120px,-120px);
+	opacity: .8;
+}
+.hover-img:hover img:nth-child(2){
+	transform: translate(80px,-80px);
+	opacity: .6;
+}
+.hover-img:hover img:nth-child(1){
+	transform: translate(40px,-40px);
+	opacity: .4;
+}
+@media only screen and (max-width: 500px) and (min-width: 0px){
+	.hover-img{
+		transform: none;
+	}
+}
